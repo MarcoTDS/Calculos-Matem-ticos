@@ -1,0 +1,17 @@
+body{
+    background-color: #4040c6;
+    font-style:italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+#resultado{
+    color: #000000;
+}
+.container{
+    background-color: #48e948;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
