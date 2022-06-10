@@ -11,7 +11,7 @@ function calcularEquacao(){
         document.querySelector('#resultado').innerHTML = '<p>X1 = ' + rx1 + '</p><p>X2 = ' + rx2 + '</p>';
     }
     else{
-        document.querySelector('#resultado').innerHTML = '<p>Delta negativo, impossível concluir o cálculo</p>';
+        document.querySelector('#resultado').innerHTML = '<p>Delta = '+delta+', impossível concluir o cálculo</p>';
     }
 }
 
