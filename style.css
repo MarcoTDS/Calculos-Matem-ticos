@@ -1,7 +1,6 @@
 body{
-    background-color: #4040c6;
-    font-style:italic;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 15px;
 }
 
@@ -9,9 +8,88 @@ body{
     color: #000000;
 }
 .container{
-    background-color: #48e948;
+    background-color:rgba(7, 81, 223, 0.5);
+    width:100%;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.forms{
+    margin-top: 50px;
+    margin-bottom:50px;
+    position: relative;
+}
+.inputs{
+    display:flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 30px;
+    background: rgba(21, 240, 240, 0.5);
+}
+.buttons{
+  
+    text-decoration: none;
+    padding:10px 25px;
+    font-size: 1.25rem;
+    position: relative;
+    margin:32px;
+}
+#bt1{
+    background: rgba(3, 22, 172, 0.5);
+    color:#fff;
+    border-radius: 30px;
+    transition: transform 0.8 ease;
+    
+}
+#bt1::after, #bt1::before{
+   content:"";
+   position: absolute;
+   opacity: 0.3;
+   background: rgba(5, 74, 184, 0.5);
+   border-radius: inherit;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   bottom: 0;
+   z-index:-1;
+   transition: transform;
+}
+#bt1:hover{
+    transform: translate(-12px,-12px);
+}
+#bt1:hover::after{
+    transform: translate(6px,6px);
+}
+#bt1:hover::before{
+    transform: translate(12px,12px);
+}
+#bt2{
+    background: rgba(3, 22, 172, 0.5);
+    color:#fff;
+    border-radius: 30px;
+    transition: transform 0.8 ease;
+    
+}
+#bt2::after, #bt2::before{
+   content:"";
+   position: absolute;
+   opacity: 0.3;
+   background: rgba(4, 75, 188, 0.5);
+   border-radius: inherit;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   bottom: 0;
+   z-index:-1;
+   transition: transform;
+}
+#bt2:hover{
+    transform: translate(-12px,-12px);
+}
+#bt2:hover::after{
+    transform: translate(6px,6px);
+}
+#bt2:hover::before{
+    transform: translate(12px,12px);
 }

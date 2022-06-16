@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Equções 2º grau</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     
     
 </head>
@@ -16,35 +16,38 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3 mb-4">
-                <p>Calcule Equações de 2º grau aqui</p>
-                <label for="number">Digite o valor de A</label><br>
-                <input type="number" id="a">
-                <br>
-                <label for="number">Digite o valor de B</label><br>
-                <input type="number" id="b">
-                <br>
-                <label for="number">Digite o valor de C</label><br>
-                <input type="number" id="c">
-                <br>
-                <button onclick="calcularEquacao()">Calcular</button>
-                <br>
+            <div class="col-md-3 mb-4 xl-6">
+                <p>Calcule qualquer equação de 2º grau aqui: </p>
+                    <div class="forms">
+                        <label for="number">Digite o valor de A</label><br>
+                        <input class="inputs" type="number" id="a">
+                        <br>
+                        <label for="number">Digite o valor de B</label><br>
+                        <input class="inputs" type="number" id="b">
+                        <br>
+                        <label for="number">Digite o valor de C</label><br>
+                        <input class="inputs" type="number" id="c">
+                        <br>
+                        <button class="buttons" id="bt1" onclick="calcularEquacao()">Calcular</button>
+                        <br>
+                    </div>
                 <div id="resultado"></div>
             </div>
-            <div class="col-md-3 mb-4">
-                <p>Calcule o vetor resultante da soma de outros 2 vetores </p>
-                <p>Regra do Paralelograma</p>
-                <label for="number">Módulo do vetor A</label><br>
-                <input type="number" id="moduloA">
-                <br>
-                <label for="number">Módulo do vetor B</label><br>
-                <input type="number" id="moduloB">
-                <br>
-                <label for="number">Valor do ângulo</label><br>
-                <input type="number" id="cosseno">
-                <br>
-                <button onclick="calcularVetor()">Calcular</button>
-                <br>
+            <div class="col-md-3 mb-4 xl-6">
+                <p>Calcule o módulo da soma de 2 vetores(regra paralelograma): </p>
+                    <div class="forms">
+                        <label for="number">Módulo do vetor A</label><br>
+                        <input class="inputs" type="number" id="moduloA">
+                        <br>
+                        <label for="number">Módulo do vetor B</label><br>
+                        <input class="inputs" type="number" id="moduloB">
+                        <br>
+                        <label for="number">Valor do ângulo</label><br>
+                        <input class="inputs" type="number" id="cosseno">
+                        <br>
+                        <button class="buttons" id="bt2" onclick="calcularVetor()">Calcular</button>
+                        <br>
+                    </div>
                 <div id="resultadoVetor"></div>
             </div>
         </div>
