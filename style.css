@@ -8,12 +8,19 @@ body{
     color: #000000;
 }
 .container{
-    background-color:rgba(7, 82, 223, 0.5);
+    background-image: linear-gradient(to bottom right, rgba(0, 8, 255, 0.5), rgba(3, 255, 234, 0.5));
     width:100%;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 53px;
+    border-bottom-right-radius: 198px;
+}
+.col-md-3{
+    margin-left:40px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
 }
 .forms{
     margin-top: 50px;
